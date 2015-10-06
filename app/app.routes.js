@@ -14,6 +14,24 @@ angular.module('scotchApp')
 			controller: 'aboutController'
 		})
 
+		// route for the dog training page
+		.when('/training', {
+			templateUrl: 'pages/training.html',
+			controller: 'trainingController'
+		})
+
+		// route for the pet sitting page
+		.when('/sitting', {
+			templateUrl: 'pages/sitting.html',
+			controller: 'petSittingController'
+		})
+
+		// route for the reviews page
+		.when('/reviews', {
+			templateUrl: 'pages/reviews.html',
+			controller: 'reviewsController'
+		})
+
 		// route for the contact page
 		.when('/contact', {
 			templateUrl: 'pages/contact.html',
