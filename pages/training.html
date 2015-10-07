@@ -1,5 +1,76 @@
-<div class="jumbotron text-center">
-	<h1>Dog Training</h1>
+<div class="row">
+	<div class="col-lg-12">
+		<h2 class="page-header">Dog Training</h2>
+	</div>
+	<div id="trainingCarousel" class="carousel slide col-md-6">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#trainingCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#trainingCarousel" data-slide-to="1"></li>
+	    <li data-target="#trainingCarousel" data-slide-to="2"></li>
+	    <li data-target="#trainingCarousel" data-slide-to="3"></li>
+	  </ol>
 
-	<p>{{message}}</p>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+	    <div class="item active">
+	        <div class="fill" style="background-image:url('../img/about1.jpg');"></div>
+	    </div>
+	    <div class="item">
+	        <div class="fill" style="background-image:url('../img/about2.jpg');"></div>
+	    </div>
+	    <div class="item">
+	        <div class="fill" style="background-image:url('../img/about3.jpg');"></div>
+	    </div>
+	    <div class="item">
+	        <div class="fill" style="background-image:url('../img/about4.jpg');"></div>
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" data-target="#trainingCarousel" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" data-target="#trainingCarousel" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<div class="col-md-6">
+		<p>{{message}}</p>
+	</div>
 </div>
+<div class="row">
+	<h3>Private Lessons</h3>
+
+	<p>I would come to your home to help you with any problems you have</p>
+	<strong>Location:</strong> Your home<br>
+	<strong>Price:</strong> $75/hour<br>
+</div>
+<div class="row">
+	<h3>Group Lessons</h3>
+
+	<p>Learn dog obedience in a group of four to five dogs</p>
+	<strong>Location:</strong> TBD<br>
+	<strong>Price:</strong> $25/hour<br>
+	<ul>
+		<li>Puppy classes</li>
+		<li>Adult classes</li>
+		<li>Puppy socialization</li>
+		<li>Canine good citizen</li>
+		<li>S.T.A.R. puppy</li>
+	</ul>
+</div>
+<div class="row">
+	Please feel free to e-mail or call me by going to the <a href="#contact">contact</a> page.
+</div>
+
+
+
+<!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
