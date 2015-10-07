@@ -1,5 +1,64 @@
-<div class="jumbotron text-center">
-	<h1>Home Page</h1>
+<div class="row">
+	<div class="col-lg-12">
+		<h2 class="page-header">Home Page</h2>
+	</div>
+	<div id="myCarousel" class="carousel slide col-md-6">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#myCarousel" data-slide-to="1"></li>
+	    <li data-target="#myCarousel" data-slide-to="2"></li>
+	    <li data-target="#myCarousel" data-slide-to="3"></li>
+	  </ol>
 
-	<p>{{message}}</p>
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+	    <div class="item active">
+	        <div class="fill" style="background-image:url('../img/about1.jpg');background-szie:contain;"></div>
+	        <div class="carousel-caption">
+	            <h2>Caption 1</h2>
+	        </div>
+	    </div>
+	    <div class="item">
+	        <div class="fill" style="background-image:url('../img/about2.jpg');"></div>
+	        <div class="carousel-caption">
+	            <h2>Caption 2</h2>
+	        </div>
+	    </div>
+	    <div class="item">
+	        <div class="fill" style="background-image:url('../img/about3.jpg');"></div>
+	        <div class="carousel-caption">
+	            <h2>Caption 3</h2>
+	        </div>
+	    </div>
+	    <div class="item">
+	        <div class="fill" style="background-image:url('../img/about4.jpg');"></div>
+	        <div class="carousel-caption">
+	            <h2>Caption 4</h2>
+	        </div>
+	    </div>
+	  </div>
+
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" data-target="#myCarousel" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" data-target="#myCarousel" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<div class="jumbotron text-center col-md-6">
+		<h1>Home Page</h1>
+
+		<p>{{message}}</p>
+	</div>
 </div>
+
+<!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
