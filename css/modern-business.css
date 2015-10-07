@@ -29,6 +29,10 @@ body {
     height: 400px;
 }
 
+#homeCarousel {
+    height: 600px;
+}
+
 .carousel .item,
 .carousel .item.active,
 .carousel .carousel-inner {
