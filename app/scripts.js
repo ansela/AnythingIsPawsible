@@ -1,19 +1,19 @@
-angular.module('scotchApp').controller('contactController', function($scope) {
-	$scope.message = 'Contact Page';
-
-	$scope.submit = function() {
-		submitForm();
-	};
+(function ($) {
+	$("#contactForm").submit(function(e) {
+		//e.preventDefault();
+		alert("button clicked");
+		//submitForm();
+	});
 
 	function submitForm() {
-		var name = $scope.name;
-		var email = $scope.email;
-		var phone = $scope.phone;
-		var message = $scope.message;
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var phone = $("#phone").val();
+		var message = $("#message").val();
 
 		$.ajax({
 			type: "POST",
-			url: "http://AnythingIsPawsible-jax.com/php/form-process.php",
+			url: "php/form-process.php",
 			data: "name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message,
 			success: function(text) {
 				if(text == "success") {
@@ -28,5 +28,4 @@ angular.module('scotchApp').controller('contactController', function($scope) {
 	function formSuccess() {
 		$("#msgSubmit").removeClass("hidden");
 	}
-
-});
+})(jQuery);
