@@ -1,7 +1,7 @@
 {
-  "name": "helloworld",
+  "name": "anythingispawsible",
   "version": "0.0.1",
-  "description": "test application",
+  "description": "Anything Is Pawsible website application",
   "main": "script.js",
   "moduleType": [
     "node"
